@@ -28,3 +28,6 @@ bool isCryptSolution(std::vector<std::string> crypt, std::vector<std::vector<cha
     }
     return (cryptValue[0] + cryptValue[1] == cryptValue[2]);
 }
+
+//The algorithm cost is O(n + m) where n  is the size of crypt and m the size of solution. In the problem m <= n always, because
+//every letter on crypt will be on solution once and only once. So in the end the cost is O(n)
